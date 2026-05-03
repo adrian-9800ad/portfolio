@@ -3,15 +3,15 @@ body {
     font-family: 'Oswald', sans-serif;
     margin: 0;
     display: flex;
-    flex-direction: column; /* Added this to stack things vertically */
-    align-items: center;    /* Added this to center the container horizontally */
-    min-height: 100vh;      /* Makes sure the dark background fills the screen */
+    flex-direction: column;
+    align-items: center;    
+    min-height: 100vh;    
 }
 
 .main-container {
     background-color: #ffffff;
     width: 950px;
-    margin: 20px auto;      /* "auto" helps center it perfectly */
+    margin: 20px auto;   
     border-top: 8px solid #ccff00;
     box-shadow: 0px 0px 30px rgba(0,0,0,0.7);
 }
@@ -62,11 +62,21 @@ iframe {
 }
 
 
-/* styles.css */
+
 .site-logo {
-    display: block;      /* Makes the image behave like a block element */
-    margin: 10px auto;   /* Centers it and adds a little spacing */
-    width: 90%;    /* Change this number to make it bigger or smaller */
-    height: 250px;        /* Keeps the proportions correct */
+    display: block;     
+    margin: 10px auto; 
+    width: 90%;    
+    height: 250px;     
+}
+
+.profile-photo {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
