@@ -1,0 +1,43 @@
+.header-bar {
+    background-color: #000;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.boot-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+}
+
+.boot-card {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.boot-card:hover {
+    border-color: #ccff00;
+    transform: translateY(-5px);
+}
+
+.boot-card img {
+    width: 100%;
+    height: auto;
+    background: #eee; 
+}
+
+.boot-card h3 { margin: 10px 0 5px; font-size: 1.1rem; }
+.boot-card p { color: #666; font-size: 0.9rem; }
+
+.price {
+    display: block;
+    font-weight: bold;
+    color: #d32f2f;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}

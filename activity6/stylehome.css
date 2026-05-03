@@ -1,0 +1,19 @@
+.hero {
+    height: 80vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.hero h2 { font-size: 4rem; font-style: italic; margin-bottom: 10px; }
+
+.cta {
+    background: var(--primary);
+    color: black;
+    padding: 15px 35px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%); /* Slanted sporty shape */
+}
