@@ -437,7 +437,6 @@
 <button class="scroll-to-top" id="scrollToTop">↑</button>
 
 <script>
-  // Smooth scrolling for navigation links
   document.querySelectorAll('nav a[href^="#"]').forEach(link => {
     link.addEventListener('click', e => {
       e.preventDefault();
@@ -448,7 +447,6 @@
     });
   });
 
-  // Active nav highlight on scroll
   const sections = document.querySelectorAll('.section-box[id]');
   const navLinks = document.querySelectorAll('nav a[href^="#"]');
   
@@ -469,7 +467,6 @@
     });
   });
 
-  // Scroll to top button
   const scrollToTopBtn = document.getElementById('scrollToTop');
   
   window.addEventListener('scroll', () => {
@@ -484,7 +481,6 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-  // Card click interactions
   document.querySelectorAll('.card').forEach(card => {
     card.addEventListener('click', function() {
       this.classList.toggle('clicked');
@@ -495,10 +491,7 @@
     });
   });
 
-  // Form submission feedback
-  // REMOVED
 
-  // Hover effect for header image
   const headerImg = document.querySelector('header img');
   if (headerImg) {
     headerImg.addEventListener('mouseenter', function() {
@@ -511,7 +504,6 @@
     });
   }
 
-  // Staggered card animations based on scroll position
   const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -100px 0px'
@@ -533,7 +525,6 @@
     cardObserver.observe(card);
   });
 
-  // Add keyboard shortcut: Press 'S' to scroll to projects
   document.addEventListener('keydown', e => {
     if (e.key.toLowerCase() === 's') {
       const projectsSection = document.querySelector('#projects');
